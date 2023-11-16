@@ -1,0 +1,10 @@
+lint:
+  parallel: true
+  commands: &lint_commands
+    standardrb:
+      glob: '*.{rb}'
+      run: bundle exec standardrb {all_files}
+
+pre-commit:
+  parallel: true
+  commands: *lint_commands

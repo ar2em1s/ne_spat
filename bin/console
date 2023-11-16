@@ -1,0 +1,8 @@
+#!/usr/bin/env ruby
+# frozen_string_literal: true
+
+require "bundler/setup"
+require "ne_spat"
+
+require "pry"
+Pry.start(__FILE__)
